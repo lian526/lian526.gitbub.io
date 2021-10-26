@@ -1,0 +1,91 @@
+
+body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+}
+h2 {
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #303030;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+h4 {
+    font-size: 19px;
+    line-height: 1.375em;
+    color: #303030;
+    font-weight: 400;
+    margin-bottom: 30px;
+}  
+.h1-set{
+  font-size: 36px;
+  font-weight:600;
+  margin-bottom: 30px;
+  color:black;
+  text-align: center;
+}
+
+#h2-color{
+  color: white;
+}
+
+#first{
+  background-attachment:fixed;
+  background-image: url(/bt/asset/友善職場.jpeg);
+  background-repeat: no-repeat;
+  padding: 250px 450px;
+  background-position:50% 10%;
+  background-size: cover;
+  height: 10vh;
+}
+
+#second{
+  background-attachment:fixed;
+  background-image: url(/bt/asset/照護資源.jpg);
+  background-repeat: no-repeat;
+  padding: 250px 450px;
+  background-position:50% 10%;
+  background-size: cover;
+  height: 10vh;
+}
+
+#third{
+  background-attachment:fixed;
+  background-image: url(/bt/asset/與失智共存.png);
+  background-repeat: no-repeat;
+  padding: 250px 450px;
+  background-position:80% 40%;
+  background-size:cover;
+  height: 10vh;
+}
+
+.jumbotron {
+    background-color:papayawhip;
+    color:white;
+    padding: 100px 25px;
+    font-family: Montserrat, sans-serif;
+    background-size: cover;
+    background-position:50% 10%;
+    height: 80vh;
+    background-image:url(/bt/asset/img_7665.jpeg);
+}
+.container-fluid {
+  padding: 60px 50px;
+}
+.bg-grey {
+    background-color: #ffffff;
+}
+
+.bg-br{
+    background-color: #f0d8b43f;
+}
+
+
+footer .glyphicon {
+    font-size: 20px;
+    margin-bottom: 20px;
+    color: #f4511e;
+}
+
+
