@@ -1,0 +1,291 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+    <style>
+        #horizontal {
+            position: relative;
+            left: 0;
+            height: 100vh;
+            width: 900vw;
+        }
+
+        #level {
+            position: relative;
+            /* 	position: absollute; */
+            /* 	 Setting absolute will lose div 1*/
+            left: 0;
+            height: 100vh;
+            width: 600vw;
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        img {
+            height: 100vh;
+            width: 1000px;
+            position: relative;
+        }
+
+        .jumbotron {
+            background: rgb(34, 58, 83);
+            padding: 100px 25px;
+            font-family: Montserrat, sans-serif;
+            background-size: cover;
+            background-position: 50% 10%;
+            height: 100vh;
+            background-image: url("photo/banner.jpeg");
+        }
+
+        p {
+            font-size: 19px;
+            font-family: "source-han-sans-traditional", "Noto Sans TC", "PingFang TC", "Apple LiGothic Medium", "Roboto", "Microsoft JhengHei", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+        }
+
+        iframe {
+            left: 50%;
+            top: 50%;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="v1frame" style="height: 500vh;">
+        <div class="sticky-top" style="z-index: -1;">
+            <video id="video1" src="photo/2016video.mp4" style="width:100vw;"></video>
+        </div>
+        <div class="row" style="height: 100vh;">
+            <div class="col-6"></div>
+            <div class="col-6" style="position: absolute;
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            font-size: 40px;
+            -webkit-text-orientation: upright;
+            text-orientation: upright;
+            line-height: 1.7;
+            letter-spacing: 0.2em;
+            white-space: pre-wrap;
+            left: 40%;
+            color: white;">
+                <p>無暇透明中帶有一點蔚藍<br>這是我們對海的印象</p>
+            </div>
+        </div>
+        <div class="row" style="height: 100vh;">
+            <div class="col-6"></div>
+            <div class="col-6" style="position: absolute;
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            font-size: 40px;
+            -webkit-text-orientation: upright;
+            text-orientation: upright;
+            line-height: 1.7;
+            letter-spacing: 0.2em;
+            white-space: pre-wrap;
+            left: 40%;
+            color: white;">
+                <p>但一次次的油污污染<br>卻這片蔚藍的海蒙上了一層黑</p>
+            </div>
+        </div>
+        <div class="row" style="height: 100vh;">
+            <div class="col-6"></div>
+            <div class="col-6" style="position: absolute;
+            display: flex;
+            justify-content: center;
+            height: 100%;
+            font-size: 40px;
+            -webkit-text-orientation: upright;
+            text-orientation: upright;
+            line-height: 1.7;
+            letter-spacing: 0.2em;
+            white-space: pre-wrap;
+            left: 40%;
+            color: white;">
+                <p>身為海島子民的我們<br>該如何與海洋共存？<br></p>
+            </div>
+        </div>
+        <div class="jumbotron text-center" style="z-index: +1;">
+            <div id="head">
+                <h1 style="color: white; font-weight: 500;font-size: 70px;margin-top: 15%;font-family:source-han-sans-traditional, "Noto Sans TC", "PingFang TC", "Apple LiGothic Medium", "Roboto", "Microsoft JhengHei", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+                ">海岸之殤</h1>
+                <h2 style="color: white; font-weight: 500;font-size: 50px;font-family: source-han-sans-traditional", "Noto Sans TC", "PingFang TC", "Apple LiGothic Medium", "Roboto", "Microsoft JhengHei", "Lucida Grande", "Lucida Sans Unicode", sans-serif;
+                ">台灣海岸污染紀錄</h2>
+            </div>
+        </div>
+    </div>
+
+
+    <div id="about" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-6" style="height: 50vh;">
+                <br><br><br><br>
+                <p>台灣四面環海，擁有得天獨厚的豐富自然美景與地理環境，然而十年間卻發生多起重大汙染事件，造成生態浩劫。在這幾起重大污染事件下，台灣海岸線究竟面臨了哪些變化？帶來什麼影響？當生態保育與經濟發展出現衝突，又該如何取捨？
+                </p>
+                <br>
+                <p>本專題將回顧近年台灣海岸油污事件，探討台灣環境生態變化，並加入時間縱深，帶您重新凝視人類與海洋的關係。</p>
+            </div>
+            <div class="col-sm-3">
+            </div>
+        </div>
+    </div>
+    
+
+    <div id="hframe" style="height: 3000vh;">
+        <div class="sticky-top">
+            <div id="horizontal" >
+                <div style="width: 610px;height: 100vh;background-color:#EDEDED ;float: left;">
+                    <p style="color:rgb(34, 58, 83);font-weight:800;font-size: 28px;text-align: center;margin-top:130px;">
+                        2011年瑞興輪汙染事件</p>
+                    <br>
+                    <p style="color:black;margin-left: 100px;margin-right: 100px;">
+                        2011年10月，巴拿馬籍砂石船瑞興輪在基隆大武崙外海觸礁，船身斷為兩截，船員跳海逃生，造成6人死亡、11人生還、4人失蹤。</p>
+                    <br>
+                    <p style="color:black;margin-left: 100px;margin-right: 100px;">
+                        船上315.2噸油料外洩，從北海岸獅子公園經大武崙漁港往東約三公里處為嚴重污染範圍，且往外木山漁港方向擴散，海洋污染程度屬於第二級。</p>
+                    <br>
+                    <p style="color:black;margin-left: 100px;margin-right: 100px;">
+                        《公視》記者柯金源在現場記錄下當時瑞興輪油污污染大武崙漁港的景象，從照片看出，大武崙漁港沿岸海水顏色透著一層金屬光澤，岸邊堆砌著許多海漂垃圾。</p>
+                    <br>
+                    <p style="color:black;margin-left: 100px;margin-right: 100px;font-size:18px;">圖片/柯金源</p>
+                </div>
+                    <img src="photo/2011-01.jpeg" /style="float: left;">
+                    <img src="photo/2011-02.jpeg" /style="float: left;">
+                    <img src="photo/2011-03.jpeg" /style="float: left;">
+
+                <div style="width: 610px;height: 100vh;background-color:#EDEDED	;float: left;">
+                    <p style="color:rgb(34, 58, 83);font-weight:800;font-size: 28px;text-align: center;margin-top:130px;">
+                        2016年「德翔台北」擱淺油污事件</p>
+                    <br>
+                    <p style="color:black;margin-left: 100px;margin-right: 100px;">
+                        2016年3月，「德翔台北」輪擱淺於新北市石門區外海，造成2死3傷悲劇，同時因輪船燃料重油外洩，在北海岸釀成生態浩劫。</p>
+                    <br>
+                    <p style="color:black;margin-left: 100px;margin-right: 100px;">
+                        油汙事件發生後，造成9成潮間帶生物死亡，從石門區到金山區海岸無一倖免。5年過去，雖然海面上現已看不到油汙，但重油沉到海底，油汙影響至今仍然存在。</p>
+                    <br>
+                    <p style="color:black;margin-left: 100px;margin-right: 100px;">
+                        《報導者》記者余志偉記錄下一位位穿著雪白防護衣、腳踏雨鞋塑膠套的除汙英雄，戴上棉織和塑膠手套，用湯勺、木板條、自製搖勺賣力除油，在石礫與岩礫縫間搶救這塊土地的過程。</p>
+                    <br>
+                    <p style="color:black;margin-left: 100px;margin-right: 100px;font-size:18px;">圖片/余志偉</p>
+                </div>
+                <img src="photo/2016-01.jpeg" /style="float: left;">
+                <img src="photo/2016-02.jpeg" / style="float: left;">
+                <img src="photo/2016-03.jpeg" /style="float: left;">
+
+                <div style="width:610px;height: 100vh;background-color:#EDEDED	;float: left;">
+                    <p style="color:rgb(34, 58, 83);font-weight:800;font-size: 28px;text-align: center;margin-top:130px;">
+                        2021年中油高雄大林外海油污事件</p>
+                    <br>
+                    <p style="color:black;margin-left: 100px;margin-right: 100px;">
+                        2021年6月，中油高雄大林煉油廠外海輸油蛇管，受到外力劇烈扭動導致意外破漏，將近50公噸原油外洩。在海浪與風的推波助瀾下，油污擴散至屏東小琉球海域。</p>
+                    <br>
+                    <p style="color:black;margin-left: 100px;margin-right: 100px;">
+                        根據屏東環保局估計，小琉球海岸全長13公里，其中將近10公里受到污染。另外海保署表示，本次事故共計向中油求償共1160萬元，並依違反海洋污染防治法祭出最高150萬元罰鍰。
+                    </p>
+                    <br>
+                    <p style="color:black;margin-left: 100px;margin-right: 100px;">
+                        海洋生態影像工作者蘇淮第一時間趕赴現場，透過空拍機拍下第一現場，從畫面中可見海面上漂浮著油污，隨著浪拍打到岸邊、沙灘上面，消波塊都可見到油污沾黏。</p>
+                    <br>
+                    <p style="color:black;margin-left: 100px;margin-right: 100px;font-size:18px;">圖片/蘇淮</p>
+                </div>
+                <img src="photo/2021-01.jpeg" /style="float: left;">
+                <img src="photo/2021-02.jpeg" / style="float: left;">
+                <img src="photo/2021-04.jpeg" /style="float: left;">
+
+            </div>
+        </div>
+    </div>
+
+    <div id="about" class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3">
+            </div>
+            <div class="col-sm-6" style="height: 50vh;">
+                <br><br>
+                <p>離我們最近的海岸潮間帶，是陸地與海洋的交界線，也是許多生物找尋安身立命之地。然而，從2011年到2021年，台灣就發生3起重大海洋油污污染事件。</p>
+                <br>
+                <p>隨著時間過去，這片寧靜的海洋表面上已不復見當時污染時的景象，但污染的影響消失了嗎？海洋恢復了嗎？人類對海洋環境的破壞，一步步瓦解人與大海依存的關係。</p>
+                <br>
+                <p>身為海島子民，在追求經濟發展的同時，必須學會的是如何與海洋生界共存、共榮，敬畏並愛惜這片海。</p>
+           
+            </div>
+            <div class="col-sm-3">
+            </div>
+        </div>
+    </div>
+
+
+    <div style="height:100px;background:#EDEDED">
+        <br>
+        <p style="text-align: center;font-size: 16px;color: rgb(77, 77, 85);">國立台灣大學新聞研究所<br>
+            文字、設計丨黃立安</p>
+    </div>
+
+
+
+
+    <!-- Optional JavaScript -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            var video1_pos = $("#video1").offset().top;
+            var video1_end = video1_pos + $("#v1frame").height() - $(window).height();
+
+
+            var max_scroll = $(document).height() - $(window).height();
+            var max_w = $("#horizontal").width() - $(window).width();
+            var h_pos = $("#horizontal").offset().top;
+            var hframe_h = $("#hframe").height();
+
+
+
+            $(window).scroll(function () {
+                var current_pos = $(window).scrollTop();
+                if (current_pos > video1_pos && current_pos < video1_end) {
+                    $("#video1")[0].play();
+                } else {
+                    $("#video1")[0].pause();
+                }
+                if (current_pos > h_pos && current_pos < hframe_h) {
+                    var new_left = (-1 * max_w * (current_pos - h_pos)) / hframe_h;
+                    $("#horizontal").css({
+                        left: new_left
+                    });
+                }
+            });
+        });
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>
