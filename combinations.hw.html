@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+
+    <style>
+        #horizontal {
+            position: relative;
+            /* 	position: absollute; */
+            /* 	 Setting absolute will lose div 1*/
+            left: 0;
+            height: 100vh;
+            width: 1000vw;
+            background-image: url("https://static01.nyt.com/newsgraphics/2016/07/14/france-attack-scroller/9ec6dcec7e22fffa81a21fb790ba566f2c6aee83/base-big.jpg");
+        }
+
+        body {
+            overflow-x: hidden;
+        }
+
+        .slideanimate {
+            visibility: hidden;
+        }
+
+        .slide {
+            animation: slide 2s 0s;
+            visibility: visible;
+        }
+
+
+        @keyframes slide {
+            0% {
+                transform: translateY(100vh);
+            }
+
+            100% {
+                transform: translateY(0vh);
+            }
+        }
+    </style>
+
+
+</head>
+
+<body>
+
+    <div style="height:50vh;background:rgb(200, 162, 218)">
+        <br> <br> <br> <br> <br> <br>
+        <p style="font-size: 50px;text-align: center;">COMBINATIONS</p>
+    </div>
+    <div id="hframe" style="height:1000vh">
+        <div class="sticky-top">
+            <div id="horizontal"></div>
+        </div>
+    </div>
+
+
+    <div style="height: 50vh;background-color: rgb(238, 166, 78);"></div>
+
+    <div id="v2frame" style="height: 1000vh;">
+        <div class="sticky-top">
+            <video id="video2" src="https://web.cw.com.tw/climate-2020/landing/cover.mp4 " style="width:100vw;"></video>
+        </div>
+    </div>
+
+    <div style="height: 50vh;background-color: rgb(238, 166, 78);"></div>
+
+    <div>
+        <img class="slideanimate" class="toanimate" src="https://p4css.github.io/webScroll/assets/taipei-1.jpg"
+            style="width: 100%;">
+        <div style="height: 20vh;background-color: rgb(177, 187, 243);"></div>
+        <img class="slideanimate" src="https://p4css.github.io/webScroll/assets/taipei-2.jpg" style="width: 100%;">
+        <div style="height: 20vh;background-color: rgb(177, 187, 243);"></div>
+        <img class="slideanimate" src="https://p4css.github.io/webScroll/assets/taipei-3.jpg" style="width: 100%;">
+        <div style="height: 20vh;background-color: rgb(177, 187, 243);"></div>
+        <img class="slideanimate" src="https://p4css.github.io/webScroll/assets/taipei-4.jpg" style="width: 100%;">
+    </div>
+
+
+    <div style="height:50vh;background:rgb(173, 171, 171)">
+        <br> <br> <br> <br> <br> <br>
+        <p style="text-align: center;font-size: 30px;color: rgb(0, 0, 0);">國立台灣大學新聞研究所<br>
+            設計丨黃立安</p>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+    </script>
+
+    <script>
+        $(document).ready(function () {
+            var max_scroll = $(document).height() - $(window).height();
+            var max_w = $("#horizontal").width() - $(window).width();
+            var h_pos = $("#horizontal").offset().top;
+            var hframe_h = $("#hframe").height();
+            var video2_pos = $("#video2").offset().top;
+            var video2_end = video2_pos + $("#v2frame").height() - $(window).height();
+            var winh = $(window).height();
+
+            $(window).scroll(function () {
+                var current_pos = $(window).scrollTop();
+                if (current_pos > h_pos && current_pos < hframe_h) {
+                    var new_left = (-1 * max_w * (current_pos - h_pos)) / hframe_h;
+                    $("#horizontal").css({
+                        left: new_left
+                    });
+
+                }
+                if (current_pos > video2_pos && current_pos < video2_end) {
+                    $("#video2")[0].play();
+                } else {
+                    $("#video2")[0].pause();
+                }
+                var scrolled = $(window).scrollTop();
+                $(".slideanimate").each(function () {
+                    var objpos = $(this).offset().top;
+                    if (scrolled > objpos - winh / 2) {
+                        $(this).addClass("slide");
+                    }
+                });
+            });
+        });
+    </script>
+
+
+</body>
+
+</html>
