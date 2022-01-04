@@ -25,7 +25,7 @@
     }
 
     #title {
-      background-image: url(/lian526.github.io/final-pic/title.png);
+      background-image: url("final-pic/title.png");
       background-size: 450px 300px;
       height: 300px;
       width: 450px;
@@ -35,7 +35,7 @@
     }
 
     #waves {
-      background-image: url(/lian526.github.io/final-pic/Waving2.gif);
+      background-image: url("final-pic/Waving2.gif");
       background-size: 100vw 700px;
       background-repeat: no-repeat;
       height: 700px;
@@ -45,7 +45,7 @@
     }
 
     #boatain {
-      background-image: url(/lian526.github.io/final-pic/boatani.png);
+      background-image: url("final-pic/boatani.png");
       background-size: 900px 400px;
       background-repeat: no-repeat;
       height: 400px;
@@ -55,10 +55,6 @@
       top: -600px;
     }
 
-    .row {
-      background-color: rgb(0, 0, 0);
-    }
-
     p {
       color: white;
       text-align: left;
@@ -66,6 +62,7 @@
       font-family: 'Roboto', 'Noto Sans TC', sans-serif;
       margin-left: 1em;
       margin-right: 1em;
+      line-height: 1.5;
     }
 
     #horizontal {
@@ -91,7 +88,7 @@
     }
 
     #land {
-      background-image: url(/lian526.github.io/final-pic/land.png);
+      background-image: url("final-pic/land.png");
       background-size: 1000px 400px;
       background-repeat: no-repeat;
       height: 400px;
@@ -115,7 +112,8 @@
 
 
   <!-- 引言 -->
-  <div class="row" style="height: 70vh;">
+  <div class="row" style="height: 70vh;background-color: rgb(0, 0, 0);
+  ">
     <div class="col-sm-3">
     </div>
     <div class="col-sm-6">
@@ -139,23 +137,23 @@
     <div class="sticky-top">
       <div id="horizontal">
         <div class="comic">
-          <img src="/lian526.github.io/final-pic/comic1.png"
+          <img src="final-pic/comic1.png"
             style="height: 600px;width: 800px;position: relative;top:-100px">
         </div>
         <div class="comic">
-          <img src="/lian526.github.io/final-pic/comic2.png"
+          <img src="final-pic/comic2.png"
+            style="height: 600px;width: 900px;position: relative;top:-100px">
+        </div>
+        <div class="comic">
+          <img src="final-pic/comic3.png"
             style="height: 600px;width: 800px;position: relative;top:-100px">
         </div>
         <div class="comic">
-          <img src="/lian526.github.io/final-pic/comic3.png"
-            style="height: 600px;width: 800px;position: relative;top:-100px">
+          <img src="final-pic/comic4.png"
+            style="height: 700px;width: 1000px;position: relative;top:-150px">
         </div>
         <div class="comic">
-          <img src="/lian526.github.io/final-pic/comic3.png"
-            style="height: 600px;width: 800px;position: relative;top:-100px">
-        </div>
-        <div class="comic">
-          <img src="/lian526.github.io/final-pic/comic4.png"
+          <img src="final-pic/comic5.png"
             style="height: 600px;width: 800px;position: relative;top:-100px">
         </div>
         <div class="comic">
@@ -170,7 +168,8 @@
 
   <!-- 銜接文字 -->
 
-  <div class="row" style="height: 30vh;">
+  <div class="row" style="height: 30vh;background-color: rgb(0, 0, 0);
+  ">
     <div class="col-sm-3">
     </div>
     <div class="col-sm-6">
@@ -185,39 +184,39 @@
 
 
   <!-- 地圖 -->
-  <div id="v1frame" style="height: 400vh;background-color: black;">
-    <div class="sticky-top" style="z-index: 1;">
-      <video id="video1" src="/lian526.github.io/final-pic/mapvideo.mp4"
-        style="width:120vw;height: 150vh;position: relative;left: -100px;"></video>
+
+  <div id="v1frame" style="height: 300vh;">
+    <div class="sticky-top" style="z-index: -1;background-color: black;">
+      <video id="video1" src="final-pic/mapvideo.mp4" style="width:100vw;height: 100vh;"></video>
     </div>
-     <div class="row" style="height: 100vh;">
-            <div class="col-6"></div>
-            <div class="col-6" style="height: 50vh;background-color:rgb(193, 207, 231);"></div>
-        </div>
-  </div>
-
-
-
-  <div id="map" style="height: 110vh;">
-    <div class="row" style="height: 40vh;">
-      <div class="col-sm-3">
-        <img src="/lian526.github.io/final-pic/map1.png" style="height: 110vh;width: 100vw;">
-      </div>
-      <div class="col-sm-6">
-        <div style="height: 60vh;"></div>
-        <p>根據人猿基金會的統計，1980年代有約一千隻的幼年印尼婆羅洲紅毛猩猩，經由海運被運送到台灣。</p>
-        <br>
-        <p>由於在漁船上長途顛簸、又沒有食物，因此根據統計，每運送四隻紅毛猩猩幼仔，抵達臺灣時僅有一隻能存活下來。</p>
-      </div>
-      <div class="col-sm-3">
+    <div class="row" style="height: 100vh;">
+      <div class="col-3"></div>
+      <div class="col-6" style="position: absolute;
+      display: flex;
+      font-size: 20px;
+      line-height: 1.5;
+      left: 30%;
+      color: rgb(255, 255, 255);">
+        <p style=" color: rgb(255, 255, 255);">根據人猿基金會的統計，1980年代有約一千隻的幼年印尼婆羅洲紅毛猩猩，經由海運被運送到台灣。</p>
+        <div class="col-3"></div>
       </div>
     </div>
 
+    <div class="row" style="height: 100vh;">
+      <div class="col-3"></div>
+      <div class="col-6" style="position: absolute;
+      display: flex;
+      font-size: 20px;
+      line-height: 1.5;
+      left: 30%;">
+        <p style="color: rgb(255, 255, 255);">由於在漁船上長途顛簸、又沒有食物，因此根據統計，<br>每運送四隻紅毛猩猩幼仔，抵達臺灣時僅有一隻能存活下來。</p>
+      </div>
+    </div>
   </div>
 
 
   <!-- 銜接文字 -->
-  <div class="row" style="height: 100vh;">
+  <div class="row" style="height: 90vh;background-color: rgb(0, 0, 0);">
     <div class="col-sm-3">
     </div>
     <div class="col-sm-6" style="position: relative;top:100px">
@@ -236,23 +235,28 @@
     </div>
   </div>
 
+  <!-- 動物現況 -->
+  <div style="height: 50vh;background-color: black;">
+    <img src="final-pic/real.png" style="height: 900px;width: 100vw;">
+  </div>
+
   <!-- 野保法出現轉折 -->
   <div id="law" style="height: 80vh;width: 100vw;background-color: black;">
-    <img src="/lian526.github.io/final-pic/word.png"
-      style="height: 300px;width: 850px;position: relative;left: 330px;top:200px">
+    <img src="final-pic/word.png"
+      style="height: 300px;width: 920px;position: relative;left: 280px;top:200px">
   </div>
 
 
   <!-- 新聞影片 -->
   <div id="v2frame" style="height: 400vh;background-color: black;">
     <div class="sticky-top" style="z-index: 1;">
-      <video id="video2" src="/lian526.github.io/final-pic/news.mp4"
+      <video id="video2" src="final-pic/news.mp4"
         style="width:100vw;height: 100vh;position: relative;"></video>
     </div>
   </div>
 
   <!-- 銜接文字 -->
-  <div class="row" style="height:55vh;">
+  <div class="row" style="height:55vh;background-color: rgb(0, 0, 0);">
     <div class="col-sm-3">
     </div>
     <div class="col-sm-6">
@@ -266,7 +270,7 @@
       <p>大多數鳥類、兩棲爬蟲類的走私透過海運，海運相較空運，缺少X光、獵犬檢查的環節，相對鬆散。大多數鳥類、兩棲爬蟲類走私都是從澎湖、馬祖、屏東東港、台東港口進來。</p>
       <br>
       <p>
-        裴家騏則說，台灣跟國際上很多富裕的國家一樣，寵物市場一直推陳出新，「某一個特定物種在台灣寵物市場的熱門期並不長久。」台灣的野生保育動物消費市場雖然不像以前那麼龐大，但仍然存在。顯然還有一個有錢的小眾市場，專門提供高單價的鳥類、爬蟲類。
+        裴家騏則說，台灣跟國際上很多富裕的國家一樣，寵物市場推陳出新，「某一個特定物種在台灣寵物市場的熱門期並不長久。」台灣的野生保育動物消費市場雖然不像以前那麼龐大，但仍然存在。顯然還有一個有錢的小眾市場，專門提供高單價的鳥類、爬蟲類。
       </p>
     </div>
     <div class="col-sm-3">
@@ -274,7 +278,7 @@
   </div>
 
   <!-- 飼養證 -->
-  <div class="row">
+  <div class="row" style="background-color: rgb(0, 0, 0);">
     <div id="bg-img" class="col-6 sticky-top"
       style="height:100vh;background: url(/lian526.github.io/final-pic/ID1.png);background-position: 80px 220px;background-size: 600px 400px;background-repeat: no-repeat;">
     </div>
@@ -304,7 +308,7 @@
 
 
   <!-- 銜接文字 -->
-  <div class="row" style="height: 30vh;">
+  <div class="row" style="height: 30vh;background-color: rgb(0, 0, 0);">
     <div class="col-sm-3">
     </div>
     <div class="col-sm-6">
@@ -319,11 +323,11 @@
 
 
   <!-- 解方 -->
-  <div class="row" style="height: 80vh;">
+  <div class="row" style="height: 80vh;background-color: rgb(0, 0, 0);">
     <div class="col-sm-1">
     </div>
     <div class="col-sm-10" style="top:-100px;left: 60px;">
-      <img src="/lian526.github.io/final-pic/cardall.png"
+      <img src="final-pic/cardall.png"
         style="height: 650px;width: 1100px;float: left;position: relative;top:50px">
     </div>
     <div class="col-sm-1">
@@ -332,7 +336,7 @@
 
   <!-- 結尾 -->
   <div style="background-color: black;">
-    <div class="row" style="height: 40vh;">
+    <div class="row" style="height: 10vh;background-color: rgb(0, 0, 0);">
       <div class="col-sm-3">
       </div>
       <div class="col-sm-6">
@@ -349,10 +353,6 @@
       </div>
     </div>
 
-    <!-- 動物現況 -->
-    <div style="height: 50vh;">
-      <img src="/lian526.github.io/final-pic/real.png" style="height: 900px;width: 100vw;">
-    </div>
 
   </div>
 
