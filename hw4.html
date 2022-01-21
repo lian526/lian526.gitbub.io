@@ -87,130 +87,91 @@
     </div>
 
 
-    <script>
-        (function () {
-            var namespace = '__twreporterEmbeddedData';
-            var pkg = 'scrollable-video';
-            if (typeof window != 'undefined') {
-                if (!window.hasOwnProperty(namespace)) {
-                    window[namespace] = {};
-                }
-                if (window[namespace] && !window[namespace].hasOwnProperty(pkg)) {
-                    window[namespace][pkg] = [];
-                }
-                if (Array.isArray(window[namespace][pkg])) {
-                    var data = {
-                        "video": {
-                            "sources": [{
-                                "type": "video\u002Fmp4",
-                                "src": "https:\u002F\u002Fraw.githubusercontent.com\u002Flian526\u002Flian526.github.io\u002Fmaster\u002Fvideo1.mp4",
-                                "width": 1440,
-                                "height": 900
-                            }]
-                        },
-                        "captions": [{
-                            "text": "台灣面積僅3萬6千平方公里，卻擁有4座核電廠，核一、核二與核四皆分布於北海岸，與人口眾多的臺北市直線距離不到30公里。",
-                            "time": 0.5,
-                            "textAlign": "justify",
-                            "xBoxAlign": "right",
-                            "xPosition": "50px",
-                            "xOffset": "30px"
-                        }, {
-                            "text": "其中以核四廠(龍門核能發電廠)爭議最大。",
-                            "time": 1.8,
-                            "textAlign": "justify",
-                            "xBoxAlign": "right",
-                            "xPosition": "50px",
-                            "xOffset": "30px"
-                        }, {
-                            "text": "核四廠半徑80公里海域內有70幾座海底火山，2011 年時中央地質調查表示，有一條長達2公里的S斷層位於核四廠的正下方，貫穿整個廠區。",
-                            "time": 3.5,
-                            "textAlign": "justify",
-                            "xBoxAlign": "right",
-                            "xPosition": "50px",
-                            "xOffset": "30px"
-                        }, {
-                            "text": "核四廠建設超過二十年，許多系統零件老舊不堪使用，原製造商也無生產對應零件，若重啟核四，經濟部保守故計須投入數百億資金。",
-                            "time": 6,
-                            "textAlign": "justify",
-                            "xBoxAlign": "right",
-                            "xPosition": "50px",
-                            "xOffset": "30px"
-                        }, {
-                            "text": "同時建設時因預算不足，採用「分包」作法，造成元件與元件間的介面複雜程度提高，系統不一致且難以整合，讓許多電力專家擔憂核四的安全性。",
-                            "time": 8.5,
-                            "textAlign": "justify",
-                            "xBoxAlign": "right",
-                            "xPosition": "50px",
-                            "xOffset": "30px"
-                        }, {
-                            "text": "總統蔡英文與副總統賴清德都曾公開指出，胡亂拼裝的建築過程為核四將帶來不穩定的風險，如同重新上路的「老爺車」。",
-                            "time": 11,
-                            "textAlign": "justify",
-                            "xBoxAlign": "right",
-                            "xPosition": "50px",
-                            "xOffset": "30px"
-                        }],
-                        "appProps": {
-                            "captionsSetting": {
-                                "xBoxAlign": "right",
-                                "xPosition": "8.7%",
-                                "yBoxAlign": "bottom",
-                                "yPosition": "20px"
-                            },
-                            "captionSetting": {
-                                "textAlign": "right"
-                            },
-                            "secondsPer100vh": 1.5,
-                            "skipLoadLocationRegExp": "editor",
-                            "forcedPreloadVideo": true,
-                            "gsapVersion": "3.5.1",
-                            "scrollTriggerVersion": "3.5.1",
-                            "pollingTimeout": 700,
-                            "preloadCacheType": "force-cache"
-                        },
-                        "theme": {
-                            "mq": {
-                                "mobileMaxWidth": "767px"
-                            },
-                            "captions": {
-                                "color": "#000000",
-                                "link": {
-                                    "color": "#a67a44",
-                                    "underlineColor": "#a67a44"
-                                },
-                                "lineHieght": "1.7",
-                                "mobileLineHeight": "1.7",
-                                "fontStyle": "normal",
-                                "fontWeight": "bold",
-                                "fontSize": "20px",
-                                "mobile": {
-                                    "fontSize": "18px"
-                                },
-                                "fontFamily": "ff-tisa-web-pro, source-han-sans-traditional, Noto Sans TC, PingFang TC, Apple LiGothic Medium, Roboto, Microsoft JhengHei, Lucida Grande, Lucida Sans Unicode, sans-serif",
-                                "box": {
-                                    "background": "#FAFAFA\t",
-                                    "width": "450px",
-                                    "mobileWidth": "77%",
-                                    "mobilePadding": "12px 12px 14px 18px"
-                                }
-                            }
-                        },
-                        "uuid": "42966734-d104-4095-ba8a-89e09474cf46"
-                    };
-                    window[namespace][pkg].push(data);
-                }
-            }
-
-        })()
-
-
-    </script>
-    <div id="42966734-d104-4095-ba8a-89e09474cf46"></div>
-
-    <script type="text/javascript" crossorigin
-        src="https://unpkg.com/@twreporter/scrollable-video@1.0.0-rc.3/dist/main.142ef5f0d6d2dfdb8b8d.bundle.js">
-    </script>
+    <div id="v1frame" style="height: 750vh;">
+        <div class="sticky-top" style="z-index: -1;">
+            <video id="video1" src="source/video1.mp4" style="width:100vw;"></video>
+        </div>
+        <div class="row" style="height: 100vh;">
+            <div class="col-6"></div>
+            <div class="col-6" style="position: absolute;
+            display: flex;
+            justify-content: center;
+            height: 15%;
+            font-size: 40px;
+            line-height: 1.7;
+            letter-spacing: 0.1em;
+            white-space: pre-wrap;
+            left: 40%;
+            color: white;
+            background-color: black;">
+                <p>台灣面積僅3萬6千平方公里，卻擁有4座核電廠，核一、核二與核四皆分布於北海岸，與人口眾多的臺北市直線距離不到30公里。</p>
+            </div>
+        </div>
+        <div class="row" style="height: 100vh;">
+            <div class="col-6"></div>
+            <div class="col-6" style="position: absolute;
+            display: flex;
+            justify-content: center;
+            height: 5%;
+            font-size: 40px;
+            line-height: 1.7;
+            letter-spacing: 0.1em;
+            white-space: pre-wrap;
+            left: 40%;
+            color: white;
+            background-color: black;">
+                <p>其中以核四廠(龍門核能發電廠)爭議最大。</p>
+            </div>
+        </div>
+        <div class="row" style="height: 100vh;">
+            <div class="col-6"></div>
+            <div class="col-6" style="position: absolute;
+            display: flex;
+            justify-content: center;
+            height: 15%;
+            font-size: 40px;
+            line-height: 1.7;
+            letter-spacing: 0.1em;
+            white-space: pre-wrap;
+            left: 40%;
+            color: white;
+            background-color: black;">
+                <p>核四廠半徑80公里海域內有70幾座海底火山，2011 年時中央地質調查表示，有一條長達2公里的S斷層位於核四廠的正下方，貫穿整個廠區。</p>
+            </div>
+        </div>
+        <div class="row" style="height: 100vh;">
+            <div class="col-6"></div>
+            <div class="col-6" style="position: absolute;
+            display: flex;
+            justify-content: center;
+            height: 15%;
+            font-size: 40px;
+            line-height: 1.7;
+            letter-spacing: 0.1em;
+            white-space: pre-wrap;
+            left: 40%;
+            color: white;
+            background-color: black;">
+                <p>核四廠建設超過20年，許多系統零件老舊不堪使用，原製造商也無生產對應零件，若重啟核四，經濟部保守故計須投入數百億資金。</p>
+            </div>
+        </div>
+        <div class="row" style="height: 100vh;">
+            <div class="col-6"></div>
+            <div class="col-6" style="position: absolute;
+            display: flex;
+            justify-content: center;
+            height: 15%;
+            font-size: 40px;
+            line-height: 1.7;
+            letter-spacing: 0.1em;
+            white-space: pre-wrap;
+            left: 40%;
+            color: white;
+            background-color: black;">
+                <p>同時建設時因預算不足，採用「分包」作法，造成元件與元件間的介面複雜程度提高，系統不一致且難以整合，讓許多電力專家擔憂核四的安全性。</p>
+            </div>
+        </div>
+    
 
 
 <div id=" about" class="container-fluid" style="background-color: rgb(255, 255, 255);">
@@ -291,6 +252,24 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
+
+<script>
+    $(document).ready(function () {
+        var video1_pos = $("#video1").offset().top;
+        var video1_end = video1_pos + $("#v1frame").height() - $(window).height();
+
+        $(window).scroll(function () {
+            var current_pos = $(window).scrollTop();
+            if (current_pos > video1_pos && current_pos < video1_end) {
+                $("#video1")[0].play();
+            } else {
+                $("#video1")[0].pause();
+            }
+        });
+    });
+
+</script>
+
 
 </body>
 
